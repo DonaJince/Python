@@ -5,12 +5,9 @@ try:
     for i in f1.readlines():
         if not c%2:
             f2.write(i)
-            c+=1
-        else:
-            c+=1
+        c+=1
 except :
     print("Error Occurred and Handled")
 finally:
     f1.close()
     f2.close()
- 
