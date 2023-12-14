@@ -1,4 +1,6 @@
-num=int(input("enter a number:"))
-assert num>0,"negative number"
+try:
+    x=int(input('enter the number'))
+    assert x>0,'too low value'
 
-    
+except AssertionError as ae:
+    print(ae)
